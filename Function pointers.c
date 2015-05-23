@@ -6,8 +6,9 @@ int sum(int n, int m){
 //pointer function definition to point owr example:
 int (*pfunc)(int,int);
 
-//point to owr example:
+//point to owr example, two possibilities:
 pfunct = &sum;
+pfunc = sum; //auto converted by the compiler
 
 //call sum throught the pointer
 int result = (*pfunct)(2,3);
@@ -32,10 +33,6 @@ pfunc myfunction(int parameter1,int  parameter2){
     pfunc myfunctionpointer = &sum;
     return myfunctionpointer;
 }
-
-
-
-
 
 //example using function pointer to emulate "forEach"
 #include <stdio.h>
