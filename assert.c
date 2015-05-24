@@ -8,4 +8,4 @@ int i = 0;
 
 assert(i == 1);
 //se termina la ejecución del programa dando feedback con el siguiente error:
-//assert: assert.c:9: test_assert: Assertion `i == 1' failed.
+//assert: assert.c:9: test_assert: Assertion 'i == 1' failed.
