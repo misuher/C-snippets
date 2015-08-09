@@ -142,4 +142,12 @@ void things_must_know(void){
 	byte pruebastring2[]="32333235";
 	printf("\n\tpruebastring2:%c", pruebastring2[1]); //2
 	printf("\n\tu8 maxsize:%lu bytes", sizeof(u8)); //puede ser 2bytes(0xFFFF) o 4 bytes(0xFFFFFFFF)
+
+	//array initialization
+	int arr[] = {1,2,3};
+	int * arr = (int []){1,2,3};
+
+	//static Keyword meanings:
+	//	1.A static variable inside a function keeps its value between invocations.
+	//	2.A static global variable or a function is "seen" only in the file it's declared in, like "private"
 }
